@@ -1,0 +1,11 @@
+.task--mandatory {
+    color: forestgreen;
+}
+
+.task--optional {
+    color: orange;
+}
+
+.task--backup {
+    color: red;
+}
