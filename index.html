@@ -193,16 +193,16 @@
     <section>
       <h2>I. Session details</h2>
       <ul>
-        <li>create DRF view</li>
-        <li>create DRF serializer</li>
-        <li>configure Django routing</li>
-        <li>configure AngularJS routing</li>
-        <li>create AngularJS controller
+        <li class="backend">create DRF view</li>
+        <li class="backend">create DRF serializer</li>
+        <li class="backend">configure Django routing</li>
+        <li class="frontend">configure AngularJS routing</li>
+        <li class="frontend">create AngularJS controller
           <ul>
             <li>fetch session</li>
           </ul>
         </li>
-        <li>fill HTML template
+        <li class="frontend">fill HTML template
           <ul>
             <li>add loader</li>
           </ul>
@@ -212,14 +212,14 @@
     <section>
       <h2>II. Create talk</h2>
       <ul>
-        <li>fill HTML form template
+        <li class="frontend">fill HTML form template
           <ul>
             <li>connect inputs with models</li>
             <li>add form submit handler</li>
             <li>add button loader</li>
           </ul>
         </li>
-        <li>create AngularJS controller
+        <li class="frontend">create AngularJS controller
           <ul>
             <li>fetch sessions</li>
             <li>send data to backend</li>
@@ -229,21 +229,21 @@
             <li>force user login</li>
           </ul>
         </li>
-        <li>assign user to talk in DRF view-set</li>
+        <li class="backend">assign user to talk in DRF view-set</li>
       </ul>
     </section>
     <section>
       <h2>III. Limit talks</h2>
       <ul>
-        <li>add new field to <code>Talk</code> Django model
+        <li class="backend">add new field to <code>Talk</code> Django model
           <ul>
             <li>define field</li>
             <li><code>./manage.py makemigrations</code></li>
             <li><code>./manage.py migrate</code></li>
           </ul>
         </li>
-        <li>add validation method in <code>Talk</code> DRF serializer</li>
-        <li>update session list HTML template
+        <li class="backend">add validation method in <code>Talk</code> DRF serializer</li>
+        <li class="frontend">update session list HTML template
           <ul>
             <li>disable "Add talk" button</li>
             <li>mark talk counter with red color</li>
@@ -254,15 +254,15 @@
     <section>
       <h2>IV. Update talk</h2>
       <ul>
-        <li>fill HTML form template
+        <li class="frontend">fill HTML form template
           <ul>
             <li>connect inputs with models</li>
             <li>add form submit handler</li>
             <li>add button loader</li>
           </ul>
         </li>
-        <li>add <code>PUT</code> method to talk resource</li>
-        <li>create AngularJS controller
+        <li class="frontend">add <code>PUT</code> method to talk resource</li>
+        <li class="frontend">create AngularJS controller
           <ul>
             <li>fetch talk</li>
             <li>send data to backend</li>
@@ -272,34 +272,34 @@
             <li>force user login</li>
           </ul>
         </li>
-        <li>disable session requirement in talk DRV view-set</li>
+        <li class="backend">disable session requirement in talk DRV view-set</li>
       </ul>
     </section>
     <section>
       <h2>V. Delete talk (with TDD)</h2>
       <ul>
-        <li>write Django test</li>
-        <li>write AngularJS test</li>
-        <li>add delete function in talk list AngularJS controller</li>
-        <li>connect delete button in HTML template with controller</li>
+        <li class="backend">write Django test</li>
+        <li class="frontend">write AngularJS test</li>
+        <li class="frontend">add delete function in talk list AngularJS controller</li>
+        <li class="frontend">connect delete button in HTML template with controller</li>
       </ul>
     </section>
     <section>
       <h2>VI. Account activation email</h2>
       <ul>
-        <li>update DRF registration view
+        <li class="backend">update DRF registration view
           <ul>
             <li>generate token</li>
             <li>send email to user</li>
           </ul>
         </li>
-        <li>create AngularJS activation controller
+        <li class="frontend">create AngularJS activation controller
           <ul>
             <li>add route</li>
             <li>send token to backend</li>
           </ul>
         </li>
-        <li>create DRF activation view
+        <li class="backend">create DRF activation view
           <ul>
             <li>check token</li>
             <li>activate user</li>
@@ -310,7 +310,7 @@
     <section>
       <h2>VII. Registration E2E tests</h2>
       <ul>
-        <li>check if errors appears after invalid registration</li>
+        <li class="frontend">check if errors appears after invalid registration</li>
       </ul>
     </section>
     <section>

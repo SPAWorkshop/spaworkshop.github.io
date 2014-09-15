@@ -22,3 +22,11 @@
 .full-code {
     width: 100% !important;
 }
+
+.frontend {
+    color: cornflowerblue;
+}
+
+.backend {
+    color: #ffff00;
+}
