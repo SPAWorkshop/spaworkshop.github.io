@@ -15,10 +15,11 @@
 
   <link rel="stylesheet" href="css/reveal.min.css">
   <link rel="stylesheet" href="css/theme/default.css" id="theme">
-  <link rel="stylesheet" href="css/custom.css">
 
   <!-- For syntax highlighting -->
   <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <link rel="stylesheet" href="css/custom.css">
 
   <!-- If the query includes 'print-pdf', include the PDF print sheet -->
   <script>
@@ -44,9 +45,18 @@
   <div class="slides">
     <section>
       <h1>SPA workshop</h1>
-      <h3>with Django and Angular JS</h3>
+      <h3>with Django and AngularJS</h3>
     </section>
     <section>
+      <h2>Agenda</h2>
+      <ol>
+        <li>Intro</li>
+        <li>Coding</li>
+        <li>Summary</li>
+      </ol>
+    </section>
+    <section>
+      <h2>Broken code #1</h2>
       <pre><code data-trim>
 &lt;script&gt;
   {% if user.is_authenticated %}
@@ -58,7 +68,8 @@
       </code></pre>
     </section>
     <section>
-      <pre><code data-trim> 
+      <h2>Broken code #2</h2>
+      <pre><code data-trim>
 <p>
   {{ user.username }} shopping cart:
   <span id="cart"><%= items.length %> items</span>
@@ -66,7 +77,8 @@
       </code></pre>
     </section>
     <section>
-      <pre><code data-trim> 
+      <h2>Broken code #3</h2>
+      <pre><code data-trim>
 &lt;script&gt;
   $('#cart').text(items.length + ' items');
 &lt;/script&gt;
@@ -120,42 +132,53 @@
     </section>
     <section>
       <h2>Stack</h2>
-      <img style="background-color: white;" src="images/angular_js_logo.png">
-      <img style="background-color: white;" src="images/drf_logo.png">
+      <img class="framework-logo" src="images/angular_js_logo.png">
+      <img class="framework-logo" src="images/django_logo.png">
+      <img class="framework-logo" src="images/drf_logo.png">
+    </section>
+    <section>
+      <h2>AngularJS</h2>
+    </section>
+    <section>
+      <h2>Django</h2>
+    </section>
+    <section>
+      <h2>Django Rest Framework</h2>
     </section>
     <section>
       <h2>Lightning talks manager</h2>
     </section>
     <section>
       <h2>Tasks</h2>
-      <ol start="0">
-        <li class="task--mandatory">Warm-up</li>
-        <li class="task--mandatory">Session details</li>
-        <li class="task--mandatory">Create talk</li>
-        <li class="task--mandatory">Limit talks</li>
-        <li class="task--optional">Update talk</li>
-        <li class="task--optional">Delete talk (with TDD)</li>
-        <li class="task--backup">Account activation email</li>
-        <li class="task--backup">Registration E2E tests</li>
+      <ol clas="tasks" start="0">
+        <li class="tasks__item--mandatory">Warm-up</li>
+        <li class="tasks__item--mandatory">Session details</li>
+        <li class="tasks__item--mandatory">Create talk</li>
+        <li class="tasks__item--mandatory">Limit talks</li>
+        <li class="tasks__item--optional">Update talk</li>
+        <li class="tasks__item--optional">Delete talk (with TDD)</li>
+        <li class="tasks__item--backup">Account activation email</li>
+        <li class="tasks__item--backup">Registration E2E tests</li>
       </ol>
     </section>
     <section>
-      <h2>Warm-up</h2>
+      <h2>0. Warm-up</h2>
       <ul>
         <li>
           activate virtualenv
-          <pre><code class="bash">$ workon spaworkshop</code></pre>
+          <pre class="full-code"><code class="bash">$ workon spaworkshop</code></pre>
         </li>
         <li>
           run backend application
-          <pre><code class="bash">$ ./manage.py runserver</code></pre>
+          <pre class="full-code"><code class="bash">$ ./manage.py runserver</code></pre>
         </li>
         <li>
           run frontend application
-          <pre><code class="bash">$ gulp serve</code></pre>
+          <pre class="full-code"><code class="bash">$ gulp serve</code></pre>
         </li>
         <li>
           setup CORS
+          <pre class="full-code"><code class="bash">$ edit backend/lightningtalks/settings.py</code></pre>
         </li>
       </ul>
     </section>
@@ -185,6 +208,9 @@
     </section>
     <section>
       <h2>Registration E2E tests</h2>
+    </section>
+    <section>
+      <h2>Summary</h2>
     </section>
   </div>
 

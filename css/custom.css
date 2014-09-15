@@ -1,11 +1,24 @@
-.task--mandatory {
+.tasks {
+    list-style-type: upper-roman;
+}
+
+.tasks__item--mandatory {
     color: forestgreen;
 }
 
-.task--optional {
+.tasks__item--optional {
     color: orange;
 }
 
-.task--backup {
+.tasks__item--backup {
     color: red;
+}
+
+.framework-logo {
+    width: 470px;
+    background-color: white !important;
+}
+
+.full-code {
+    width: 100% !important;
 }
