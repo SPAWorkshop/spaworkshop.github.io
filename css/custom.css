@@ -1,5 +1,5 @@
 .tasks {
-    list-style-type: upper-roman;
+    list-style-type: upper-roman !important;
 }
 
 .tasks__item--mandatory {
