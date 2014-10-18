@@ -4,22 +4,24 @@
     <head>
         
         <meta charset="UTF-8">
-        <title>Introduction | Django SPA Workshop</title>
+        <title>Task 3 - Limit the number of talks per session | Django SPA Workshop</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="A few words of introduction.">
+        <meta name="description" content="">
         <meta name="generator" content="GitBook 1.1.0">
         <meta name="HandheldFriendly" content="true"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
     
     
     
-    <link rel="next" href="./how_it_works/README.html" />
+    <link rel="next" href="../tasks/task_4_-_update_talk.html" />
     
+    
+    <link rel="prev" href="../tasks/task_2_-_create_talk.html" />
     
 
         
@@ -27,11 +29,11 @@
     <body>
         
         
-<link rel="stylesheet" href="gitbook/style.css">
+<link rel="stylesheet" href="../gitbook/style.css">
 
 
         
-    <div class="book" data-level="0" data-basepath="." data-revision="1413628182540">
+    <div class="book" data-level="2.4" data-basepath=".." data-revision="1413628182540">
     
 
 <div class="book-summary">
@@ -49,10 +51,10 @@
         
     
         
-        <li class="chapter active" data-level="0" data-path="index.html">
+        <li class="chapter " data-level="0" data-path="index.html">
             
                 
-                    <a href="./index.html">
+                    <a href="../index.html">
                         <i class="fa fa-check"></i>
                         
                          Introduction
@@ -66,7 +68,7 @@
         <li class="chapter " data-level="1" data-path="how_it_works/README.html">
             
                 
-                    <a href="./how_it_works/README.html">
+                    <a href="../how_it_works/README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>1.</b>
@@ -82,7 +84,7 @@
         <li class="chapter " data-level="2" data-path="tasks/README.html">
             
                 
-                    <a href="./tasks/README.html">
+                    <a href="../tasks/README.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.</b>
@@ -99,7 +101,7 @@
         <li class="chapter " data-level="2.1" data-path="tasks/task_0_-_fake_requests_delay.html">
             
                 
-                    <a href="./tasks/task_0_-_fake_requests_delay.html">
+                    <a href="../tasks/task_0_-_fake_requests_delay.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.1.</b>
@@ -115,7 +117,7 @@
         <li class="chapter " data-level="2.2" data-path="tasks/task_1_-_session_detail_page.html">
             
                 
-                    <a href="./tasks/task_1_-_session_detail_page.html">
+                    <a href="../tasks/task_1_-_session_detail_page.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.2.</b>
@@ -131,7 +133,7 @@
         <li class="chapter " data-level="2.3" data-path="tasks/task_2_-_create_talk.html">
             
                 
-                    <a href="./tasks/task_2_-_create_talk.html">
+                    <a href="../tasks/task_2_-_create_talk.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
@@ -144,10 +146,10 @@
         </li>
     
         
-        <li class="chapter " data-level="2.4" data-path="tasks/task_3_-_limit_the_number_of_talks_per_session.html">
+        <li class="chapter active" data-level="2.4" data-path="tasks/task_3_-_limit_the_number_of_talks_per_session.html">
             
                 
-                    <a href="./tasks/task_3_-_limit_the_number_of_talks_per_session.html">
+                    <a href="../tasks/task_3_-_limit_the_number_of_talks_per_session.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.</b>
@@ -163,7 +165,7 @@
         <li class="chapter " data-level="2.5" data-path="tasks/task_4_-_update_talk.html">
             
                 
-                    <a href="./tasks/task_4_-_update_talk.html">
+                    <a href="../tasks/task_4_-_update_talk.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.5.</b>
@@ -261,7 +263,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="./" >Django SPA Workshop</a>
+        <a href="../" >Django SPA Workshop</a>
     </h1>
 </div>
 
@@ -269,13 +271,28 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_1">
+                    <section class="normal" id="section-gitbook_7">
                     
-                        <h1 id="django-spa-workshop">Django SPA Workshop</h1>
-<h2 id="introduction">Introduction</h2>
-<p>A few words of introduction.</p>
-<h2 id="what-you-are-going-to-build">What you are going to build?</h2>
-<p>Show some fancy screenshot and write a sentence or two about what service we are building here.</p>
+                        <h1 id="task-3---limit-the-number-of-talks-per-session">Task 3 - Limit the number of talks per session</h1>
+<h2 id="goal">Goal</h2>
+<p>Aim of this task is to limit the number of talks that user can add to single session.</p>
+<h2 id="objectives">Objectives</h2>
+<h3 id="frontend">Frontend</h3>
+<ul>
+<li>At the creation talk template we need to display the number of talks</li>
+<li>if session has already maximum number of talks:<ul>
+<li>disable &quot;Add talk&quot; button</li>
+<li>mark talks number counter with red color</li>
+</ul>
+</li>
+</ul>
+<h3 id="backend">Backend</h3>
+<ul>
+<li>Add new field to <code>Session</code> model (<code>max_talks</code>)</li>
+<li>Remember to add a migration after changing the model.</li>
+<li>Run migration in order to actually change state of the database.</li>
+<li>Implement validation at the talk serializer when creating new talk.</li>
+</ul>
 
                     
                     </section>
@@ -286,21 +303,23 @@
         </div>
 
         
+        <a href="../tasks/task_2_-_create_talk.html" class="navigation navigation-prev " aria-label="Previous page: Task 2 - Create talk"><i class="fa fa-angle-left"></i></a>
         
-        <a href="./how_it_works/README.html" class="navigation navigation-next navigation-unique" aria-label="Next page: How it works"><i class="fa fa-angle-right"></i></a>
+        
+        <a href="../tasks/task_4_-_update_talk.html" class="navigation navigation-next " aria-label="Next page: Task 4 - Update talk"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
 
         
-<script src="gitbook/app.js"></script>
+<script src="../gitbook/app.js"></script>
 
     
     <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
 
     
-    <script src="gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
     
 
 <script>

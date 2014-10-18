@@ -1,0 +1,453 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>How it works | Django SPA Workshop</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.1.0">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../tasks/README.html" />
+    
+    
+    <link rel="prev" href="../index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book" data-level="1" data-basepath=".." data-revision="1413628182540">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1" data-path="how_it_works/README.html">
+            
+                
+                    <a href="../how_it_works/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         How it works
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="tasks/README.html">
+            
+                
+                    <a href="../tasks/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Tasks
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="tasks/task_0_-_fake_requests_delay.html">
+            
+                
+                    <a href="../tasks/task_0_-_fake_requests_delay.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Task 0 - Fake requests delay
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="tasks/task_1_-_session_detail_page.html">
+            
+                
+                    <a href="../tasks/task_1_-_session_detail_page.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Task 1 - Session detail page
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="tasks/task_2_-_create_talk.html">
+            
+                
+                    <a href="../tasks/task_2_-_create_talk.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         Task 2 - Create talk
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="tasks/task_3_-_limit_the_number_of_talks_per_session.html">
+            
+                
+                    <a href="../tasks/task_3_-_limit_the_number_of_talks_per_session.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         Task 3 - Limit the number of talks per session
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="tasks/task_4_-_update_talk.html">
+            
+                
+                    <a href="../tasks/task_4_-_update_talk.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         Task 4 - Update talk
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Django SPA Workshop</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_2">
+                    
+                        <h1 id="how-it-works">How it works</h1>
+<h2 id="frontend">Frontend</h2>
+<p>After running <code>gulp</code> command browser should be opened and you should see a session
+list, similar to the one from Figure 1.</p>
+<p><img src="../images/session-list.png" alt="Figure 1"></p>
+<h3 id="url-handler">URL handler</h3>
+<p>Let&#39;s have a look at (simplified) Angular application definition.</p>
+<pre><code class="lang-javascript">angular.module(<span class="hljs-string">'lightningtalks'</span>, [<span class="hljs-string">'ngRoute'</span>])
+  .config(<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($routeProvider, $httpProvider)</span> </span>{
+
+    $routeProvider
+      .when(<span class="hljs-string">'/'</span>, {
+        templateUrl: <span class="hljs-string">'partials/sessions/session-list.html'</span>,
+        controller: <span class="hljs-string">'SessionListCtrl'</span>
+      });
+</code></pre>
+<p>What&#39;s important here is <code>$routeProvider.when</code> method. We can seee that <code>/</code> url
+is bound to the <code>session-list.html</code> template and is handled by <code>SessionListCtrl</code>.</p>
+<p>We will describe briefly what&#39;s going on on a template.</p>
+<h3 id="the-view">The View</h3>
+<p>Here is our <code>session-list.html</code> template&#39;s content (again, simplified):</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sessions"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sessions__list"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sessions__item"</span> <span class="hljs-attribute">ng-repeat</span>=<span class="hljs-value">"session in sessions"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">h2</span>&gt;</span>{{ session.name }}<span class="hljs-tag">&lt;/<span class="hljs-title">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>Note that cryptic <code>ng-repeat=&quot;session in sessions&quot;</code> attribute declaration at
+the <code>li</code> element.  It means that <code>li</code> element should be repeated for each item
+within <code>sessions</code> object. We might assume that this object is an array of
+session objects.</p>
+<blockquote>
+<p>Tip: Angular provides some helpers to get the <em>scope</em> of an HTML element. You
+can open developer tools in your browser and type into console:
+<code>angular.element(&#39;.sessions__list&#39;).scope()</code> to see a Javascript object that
+is bound to the element.</p>
+</blockquote>
+<p>But how was that <code>sessions</code> set on the scope?</p>
+<h3 id="the-controller">The Controller</h3>
+<p>Firstly let us have a look at the controller&#39;s code:</p>
+<pre><code class="lang-js">angular.module(<span class="hljs-string">'lightningtalks'</span>)
+  .controller(<span class="hljs-string">'SessionListCtrl'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($scope, Session)</span> </span>{
+    $scope.sessions = Session.query();
+  });
+</code></pre>
+<p>Actually, there is not much going on here. In fact, our controller is
+responsible only for setting <code>sessions</code> object at the <code>$scope</code>. So our
+<code>sessions</code> is the result of the <code>Session.query()</code> method call. And the
+<code>Session</code> object is an custom <em>service</em> which defines the model.</p>
+<h3 id="the-model">The Model</h3>
+<p>In our example model is a result of the API endpoint call. AngularJS provides
+low level <code>$http</code> object for communication over HTTP, however it also gives us
+a nice API resources wrapper. At <code>session-service.js</code> file we can see something
+similar to:</p>
+<pre><code class="lang-js">angular.module(<span class="hljs-string">'lightningtalks'</span>)
+  .service(<span class="hljs-string">'Session'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">($resource)</span> </span>{
+    <span class="hljs-keyword">return</span> $resource(<span class="hljs-string">'http://localhost:8000/api/sessions/:id'</span>);
+  });
+</code></pre>
+<p>With that service definition we can use <code>Session</code> object and it&#39;s methods to
+talk with our API server.</p>
+<h2 id="backend">Backend</h2>
+<p>We already know how the frontend works so now is the time for the API backing
+our application. We use Django Rest Framework for creating API endpoints.</p>
+<p><img src="../images/api-session-list.png" alt="Figure 2"></p>
+<h3 id="url-handler">URL handler</h3>
+<p>At <code>lightningtalks/urls.py</code> we can find how URLs are handled.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> patterns
+<span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> url
+<span class="hljs-keyword">from</span> talks <span class="hljs-keyword">import</span> views <span class="hljs-keyword">as</span> talks_views
+
+urlpatterns = patterns(<span class="hljs-string">''</span>,
+    url(<span class="hljs-string">r'^api/sessions$'</span>, talks_views.SessionListView.as_view()),
+)
+</code></pre>
+<p>From the above code we can see that calls to the <code>/api/sessions</code> are handled by
+the <code>SessionListView</code>.</p>
+<h3 id="the-controller">The Controller</h3>
+<p>Let&#39;s have a look at the code first.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Session
+<span class="hljs-keyword">from</span> .serializers <span class="hljs-keyword">import</span> SessionListSerializer
+<span class="hljs-keyword">from</span> rest_framework <span class="hljs-keyword">import</span> generics
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SessionListView</span><span class="hljs-params">(generics.ListAPIView)</span>:</span>
+    model = Session
+    serializer_class = SessionListSerializer
+</code></pre>
+<p>These few lines tell us that <code>SessionListView</code> operates on <code>Session</code> model and
+uses <code>SessionListSerializer</code> for managing (de)serialization.</p>
+<blockquote>
+<p>Note that our view <em>extends</em> more generic <code>ListAPIView</code>. Read more here:
+<a href="http://www.django-rest-framework.org/api-guide/generic-views#listmodelmixin" target="_blank">http://www.django-rest-framework.org/api-guide/generic-views#listmodelmixin</a></p>
+</blockquote>
+<h3 id="the-model">The Model</h3>
+<p>Our <code>Session</code> model is pretty simple. Table should store the information on the
+session name and start time. In addition we want to store information on how
+long each talk should be (with default value of 5 minutes).</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> models
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Session</span><span class="hljs-params">(models.Model)</span>:</span>
+    name = models.CharField(max_length=<span class="hljs-number">64</span>, default=<span class="hljs-string">'Lightning Talks'</span>)
+    starts_at = models.DateTimeField()
+    talk_time = models.PositiveSmallIntegerField(default=<span class="hljs-number">5</span>)
+</code></pre>
+<blockquote>
+<p>Hint: Django automatically adds a primary key field under <code>id</code> attribute if
+we don&#39;t specify any.</p>
+</blockquote>
+<h3 id="the-serializer">The Serializer</h3>
+<p>Serialization is the heart of the API: it tells which objects should be
+transformed into what. Our serializer must fetch <code>Session</code> objects from the
+database and return proper data that would be then transformed into JSON.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> models <span class="hljs-keyword">import</span>
+<span class="hljs-keyword">from</span> rest_framework <span class="hljs-keyword">import</span> serializers
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">SessionListSerializer</span><span class="hljs-params">(serializers.ModelSerializer)</span>:</span>
+    talks_count = serializers.Field(source=<span class="hljs-string">'talks.count'</span>)
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        model = models.Session
+        fields = (
+            <span class="hljs-string">'id'</span>,
+            <span class="hljs-string">'name'</span>,
+            <span class="hljs-string">'starts_at'</span>,
+            <span class="hljs-string">'talk_time'</span>,
+            <span class="hljs-string">'talks_count'</span>,
+        )
+</code></pre>
+<p>As Django Rest Framework can introspect Django models, we don&#39;t need to write
+the <em>serialization</em> code. We are defining list of fields that should be
+returned by the serializer, though. In addition, we define our own field for
+the serializer. Note that <code>talks_count</code> is a name of the serializer field, not
+model field. It however points to the model&#39;s source field (<code>talks.count</code>).
+Source fields might be simple attributes or methods.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../tasks/README.html" class="navigation navigation-next " aria-label="Next page: Tasks"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.4-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
